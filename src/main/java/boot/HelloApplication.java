@@ -11,7 +11,7 @@ import org.springframework.scheduling.annotation.EnableScheduling;
 @EnableScheduling//开启定时任务
 public class HelloApplication {
    public static void main(String[] args) {
-	   System.out.println("11");
+	   System.out.println("112211");
       //启动spring boot应用
       SpringApplication.run(HelloApplication.class,args);
    }
