@@ -16,8 +16,8 @@ public class HelloController extends baseController{
 	@Autowired
     private ParamProperties paramProperties;
 	//日志log4j2
-	private static final Logger LOGGER = LoggerFactory
-			.getLogger(HelloController.class);
+//	private static final Logger LOGGER = LoggerFactory
+//			.getLogger(HelloController.class);
 	
 	@RequestMapping("/hello")
 	@ResponseBody
@@ -27,14 +27,14 @@ public class HelloController extends baseController{
 	
 	@RequestMapping("/toDemo")
 	public String toDemo(ModelMap map) {
-		LOGGER.debug("===========debug信息>>>>" + paramProperties);
-		LOGGER.info("===========info信息>>>>" + paramProperties);
-		LOGGER.trace("I am trace log.");
-		LOGGER.debug("I am debug log.");
-		LOGGER.warn("I am warn log.");
-		LOGGER.error("I am error log.");
+//		LOGGER.debug("===========debug信息>>>>" + paramProperties);
+//		LOGGER.info("===========info信息>>>>" + paramProperties);
+//		LOGGER.trace("I am trace log.");
+//		LOGGER.debug("I am debug log.");
+//		LOGGER.warn("I am warn log.");
+//		LOGGER.error("I am error log.");
 		// 手动异常
-		System.out.println(1 / 0);
+//		System.out.println(1 / 0);
 		// 会有中文乱码问题 TODO
 		map.addAttribute("host", "baidu.com" + paramProperties.getBasesName()); 
 		return "demo";

@@ -75,12 +75,10 @@
               </exclusion>
           </exclusions>
       </dependency>
-      <!--mysql jdbc驱动 -->
-      <dependency>
-          <groupId>mysql</groupId>
-          <artifactId>mysql-connector-java</artifactId>
-          <version>5.1.29</version>
-      </dependency>
+	  <dependency>
+		  <groupId>mysql</groupId>
+		  <artifactId>mysql-connector-java</artifactId>
+	  </dependency>
       <!-- alibaba的druid数据库连接池 -->
       <dependency>
           <groupId>com.alibaba</groupId>
@@ -102,12 +100,6 @@
            <groupId>org.springframework.boot</groupId>
            <artifactId>spring-boot-maven-plugin</artifactId>
         </plugin>
-         <!-- mybatis generator 自动生成代码插件 -->
-         <plugin>
-             <groupId>org.mybatis.generator</groupId>
-             <artifactId>mybatis-generator-maven-plugin</artifactId>
-             <version>${mybatis.generator.version}</version>
-         </plugin>
       </plugins>
   </build>
 </project>
